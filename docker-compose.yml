@@ -63,6 +63,7 @@ services:
     image: postgres:15
     container_name: worklenz_db
     environment:
+      POSTGRES_USER: "{DB_USER}"
       POSTGRES_DB: "${DB_NAME}"
       POSTGRES_PASSWORD: "${DB_PASSWORD}"
     healthcheck:
